@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creator Size Toolkit | Free Image Resize & Aspect Ratio Calculator</title>
+  <meta name="description" content="Free image resize and aspect ratio calculator for creators. Scale dimensions, preview crops, and use export-size guides for YouTube, Instagram, blogs, Etsy, and email.">
+  <meta name="keywords" content="image resize calculator, aspect ratio calculator, instagram image size, youtube thumbnail size, creator tools">
+  <meta property="og:title" content="Creator Size Toolkit">
+  <meta property="og:description" content="Free browser-based image resize and aspect ratio calculator for creators, photographers, and marketers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://raiderj77.github.io/creator-size-toolkit/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://raiderj77.github.io/creator-size-toolkit/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Creator Size Toolkit",
+      "url": "https://raiderj77.github.io/creator-size-toolkit/",
+      "description": "Free image resize and aspect ratio calculator for creators."
+    }
+  </script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Creator Size Toolkit</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="pages/export-sizes.html">Export Sizes</a>
+        <a href="pages/instagram-size-calculator.html">Instagram Guide</a>
+        <a href="pages/youtube-thumbnail-size.html">YouTube Guide</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Free Tool Website</p>
+        <h1>Resize smarter before you open Photoshop.</h1>
+        <p class="lede">Calculate aspect ratios, scale dimensions, and preview common export targets in one fast browser tool. Built for creators, marketers, and small business owners who just need the numbers to be right.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#tool">Open the calculator</a>
+          <a class="button button-secondary" href="#library">Browse size guides</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="stat-label">Useful for</p>
+        <ul class="stat-list">
+          <li>Instagram posts, stories, and reels</li>
+          <li>YouTube thumbnails and channel art</li>
+          <li>Blog hero images and email banners</li>
+          <li>Client delivery prep and social exports</li>
+        </ul>
+      </div>
+    </section>
+
+    <main>
+      <section class="tool-panel" id="tool">
+        <div class="section-heading">
+          <p class="eyebrow">Main Tool</p>
+          <h2>Image Resize Calculator</h2>
+          <p>Enter a starting size, choose a preset or custom ratio, then scale up or down without fuzzy math.</p>
+        </div>
+
+        <div class="calculator-grid">
+          <form class="calculator-card" id="calculator">
+            <label>
+              Original width
+              <input type="number" id="width" min="1" value="2400" required>
+            </label>
+
+            <label>
+              Original height
+              <input type="number" id="height" min="1" value="1600" required>
+            </label>
+
+            <label>
+              Preset
+              <select id="preset">
+                <option value="custom">Custom</option>
+                <option value="1:1">Square 1:1</option>
+                <option value="4:5">Instagram Portrait 4:5</option>
+                <option value="16:9">Widescreen 16:9</option>
+                <option value="9:16">Vertical Video 9:16</option>
+                <option value="3:2">Photography 3:2</option>
+              </select>
+            </label>
+
+            <div class="ratio-row">
+              <label>
+                Ratio width
+                <input type="number" id="ratioWidth" min="1" value="3" required>
+              </label>
+
+              <label>
+                Ratio height
+                <input type="number" id="ratioHeight" min="1" value="2" required>
+              </label>
+            </div>
+
+            <label>
+              Scale percent
+              <input type="range" id="scale" min="10" max="200" value="100">
+            </label>
+
+            <div class="scale-readout">
+              <span id="scaleValue">100%</span>
+              <button class="text-button" type="button" id="resetScale">Reset</button>
+            </div>
+          </form>
+
+          <div class="results-card">
+            <div class="result-block">
+              <p class="result-label">Current aspect ratio</p>
+              <p class="result-value" id="currentRatio">3:2</p>
+            </div>
+            <div class="result-block">
+              <p class="result-label">Scaled dimensions</p>
+              <p class="result-value" id="scaledDimensions">2400 x 1600</p>
+            </div>
+            <div class="result-block">
+              <p class="result-label">Crop-safe dimensions</p>
+              <p class="result-value" id="cropDimensions">2400 x 1600</p>
+            </div>
+            <div class="preview-box">
+              <div class="preview-frame" id="previewFrame">
+                <span>Live ratio preview</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="presets-panel" id="library">
+        <div class="section-heading">
+          <p class="eyebrow">Tool Library</p>
+          <h2>Search-friendly pages you can grow over time</h2>
+          <p>These pages give the site multiple entry points instead of relying on one homepage to rank for everything.</p>
+        </div>
+
+        <div class="resource-grid">
+          <article class="resource-card">
+            <p class="eyebrow">Guide</p>
+            <h3><a href="pages/export-sizes.html">Export Sizes Cheat Sheet</a></h3>
+            <p>A single page for the most common social, blog, ecommerce, and email image sizes.</p>
+          </article>
+          <article class="resource-card">
+            <p class="eyebrow">Guide</p>
+            <h3><a href="pages/instagram-size-calculator.html">Instagram Image Size Guide</a></h3>
+            <p>Quick reference for portrait, square, story, and reel cover dimensions.</p>
+          </article>
+          <article class="resource-card">
+            <p class="eyebrow">Guide</p>
+            <h3><a href="pages/youtube-thumbnail-size.html">YouTube Thumbnail Size Guide</a></h3>
+            <p>Thumbnail dimensions, safe design habits, and a short workflow for exports.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Why This Can Make Money</p>
+          <h2>Ethical monetization paths</h2>
+          <p>Keep the free tool genuinely useful, then layer revenue on top of real intent instead of gimmicks.</p>
+        </div>
+
+        <div class="ideas-grid">
+          <article>
+            <h3>Affiliate tutorials</h3>
+            <p>Publish honest comparisons of design, compression, scheduling, or editing tools that naturally relate to exporting images.</p>
+          </article>
+          <article>
+            <h3>Lead magnet</h3>
+            <p>Offer a downloadable creator image size cheat sheet in exchange for email signups, then recommend tools or your own products.</p>
+          </article>
+          <article>
+            <h3>Sponsor slot</h3>
+            <p>Once the site gets traffic, sell one clearly labeled sponsor placement on guide pages or newsletters.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq-panel">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Common questions people search for</h2>
+        </div>
+
+        <div class="faq-list">
+          <article>
+            <h3>What does aspect ratio mean?</h3>
+            <p>Aspect ratio describes the relationship between width and height, like 16:9 or 4:5. It helps you keep designs proportional across platforms.</p>
+          </article>
+          <article>
+            <h3>Should I resize or crop first?</h3>
+            <p>Usually crop first to the target shape, then resize to the final export dimensions. That keeps the composition cleaner.</p>
+          </article>
+          <article>
+            <h3>Can this replace Photoshop?</h3>
+            <p>No. This site is best for planning sizes and proportions quickly before you export in your main editor.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>This site runs fully in your browser. No uploads, no tracking, no surprise paywall.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

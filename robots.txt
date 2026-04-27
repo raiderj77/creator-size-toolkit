@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raiderj77.github.io/creator-size-toolkit/sitemap.xml
