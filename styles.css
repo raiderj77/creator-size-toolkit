@@ -326,6 +326,22 @@ input[type="range"] {
   gap: 16px;
 }
 
+.capture-panel {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.capture-form {
+  display: grid;
+  gap: 14px;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 22px;
+}
+
 .resource-card h3,
 .ideas-grid h3,
 .faq-list h3,
@@ -383,7 +399,8 @@ input[type="range"] {
   .calculator-grid,
   .resource-grid,
   .ideas-grid,
-  .content-grid {
+  .content-grid,
+  .capture-panel {
     grid-template-columns: 1fr;
   }
 

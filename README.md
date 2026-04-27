@@ -6,6 +6,9 @@ Static free-tool website for creators who need quick image resizing and aspect r
 
 - Browser-based resize and crop calculator
 - Extra SEO-friendly guide pages
+- Monetization-ready comparison pages
+- Placeholder email capture section
+- Affiliate disclosure and privacy pages
 - Internal links between related tool pages
 - `robots.txt` and `sitemap.xml`
 - GitHub Pages workflow
@@ -16,6 +19,11 @@ Static free-tool website for creators who need quick image resizing and aspect r
 - `pages/export-sizes.html` - quick export dimensions cheat sheet
 - `pages/instagram-size-calculator.html` - Instagram sizing guide
 - `pages/youtube-thumbnail-size.html` - YouTube thumbnail sizing guide
+- `pages/best-image-resizer-tools.html` - affiliate-ready comparison page
+- `pages/best-thumbnail-tools.html` - affiliate-ready comparison page
+- `pages/best-image-compression-tools.html` - affiliate-ready comparison page
+- `pages/affiliate-disclosure.html` - disclosure page
+- `pages/privacy.html` - privacy placeholder
 
 ## Local preview
 
