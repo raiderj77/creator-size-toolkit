@@ -24,6 +24,9 @@ Static free-tool website for creators who need quick image resizing and aspect r
 - `pages/best-image-compression-tools.html` - affiliate-ready comparison page
 - `pages/affiliate-disclosure.html` - disclosure page
 - `pages/privacy.html` - privacy placeholder
+- `pages/creator-cheat-sheet.html` - lead magnet landing page
+- `pages/sponsor-contact.html` - lightweight sponsor/contact page
+- additional SEO pages for common image-size searches
 
 ## Local preview
 

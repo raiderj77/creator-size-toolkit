@@ -215,7 +215,8 @@ h2 {
 .resource-card,
 .faq-list article,
 .table-card,
-.note-card {
+.note-card,
+.cta-card {
   background: var(--surface-strong);
   border: 1px solid var(--line);
   border-radius: 24px;
@@ -340,6 +341,14 @@ input[type="range"] {
   border: 1px solid var(--line);
   border-radius: 24px;
   padding: 22px;
+}
+
+.cta-card {
+  background: linear-gradient(145deg, #fff7f1, #fffdf8);
+}
+
+.cta-card .button {
+  margin-top: 10px;
 }
 
 .resource-card h3,
